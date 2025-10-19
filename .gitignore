@@ -1,0 +1,24 @@
+# Node
+node_modules/
+npm-debug.log*
+.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# MacOS
+.DS_Store
+
+# Vite
+dist/
+
+# uploads
+backend/uploads/
+
+# IDE
+.vscode/
+.idea/

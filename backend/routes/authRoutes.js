@@ -1,0 +1,24 @@
+const express = require("express");
+const multer = require("multer");
+const {registerUser, loginUser, getUserProfile} = require("../controllers/authController");
+const { protect } = require("../middlewares/authMiddleware");
+const upload = require("../middlewares/uploadMiddleware");
+
+const upload = multer({ dest: 'uploads/' });
+
+const router = express.Router();
+router.post("/register", registerUser);
+router.post("/login", loginUser);
+router.get("/profile",protect, getUserProfile);
+
+router.post("/upload-image",upload.single("image"),(req,res) => {
+    if(!req.file){
+        return res.status(400).json({message: "No file uploaded"});
+
+    }
+    const imageUrl = `${req.protocol}://${req.get("host")}/uploads/${req.file.filename}`;
+    
+    res.json({message: "Image uploaded successfully", imageUrl});
+});
+
+module.exports = router;
