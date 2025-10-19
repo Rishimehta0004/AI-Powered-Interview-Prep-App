@@ -1,48 +1,3 @@
-# MERN Notes Application
-
-This repository contains a MERN-stack notes/interview-prep application.
-
-Structure
-
-Quick start (local)
-
-1. Install dependencies
-
-   # backend
-   cd backend
-   npm install
-
-   # frontend
-   cd ../frontend
-   npm install
-
-2. Start backend and frontend
-
-   # backend (dev)
-   cd backend
-   npm run dev
-
-   # frontend
-   cd frontend
-   npm run dev
-
-Environment
-```
-PORT=8000
-MONGO_URI=your_mongo_connection_string
-JWT_SECRET=your_jwt_secret
-GOOGLE_API_KEY=your_google_api_key
-```
-
-CI
-
-Deployment
-
-License
-MIT
-# AI-Powered-Interview-Prep-App
-<!-- Improved README for AI-Powered Interview Prep App -->
-
 # AI-Powered Interview Prep — MERN
 
 ![Build](https://img.shields.io/github/actions/workflow/status/Rishimehta0004/AI-Powered-Interview-Prep-App/ci.yml?branch=main)
@@ -137,4 +92,4 @@ License
 MIT — see LICENSE file.
 
 Contact
-Rishi Mehta — rishimehta1501@example.com
+Rishi Mehta — rishimehta1501@gmail.com
