@@ -92,4 +92,4 @@ License
 MIT — see LICENSE file.
 
 Contact
-Rishi Mehta — rishimehta1501@gmail.com
+Rishi Mehta — rishim1504@gmail.com
